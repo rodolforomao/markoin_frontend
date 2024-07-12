@@ -1,0 +1,21 @@
+main{
+  background-color: var(--primary);
+}
+
+  li{
+    transition: background-color 0.3s ease;
+  }
+  li p {
+    margin: 0; /* Remove default margin for better text alignment */
+    transition: all 0.4s ease; /* Smooth opacity transition on hover */
+    opacity: 1; /* Initially hide the text */
+    height: 50px;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  li:hover p {
+    opacity: 1; /* Reveal the text on hover */
+    height: 50px;
+    margin-top:0 ;
+  }

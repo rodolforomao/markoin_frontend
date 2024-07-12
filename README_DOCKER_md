@@ -1,0 +1,12 @@
+$ npm cache clean --force
+
+#
+$ rm package-lock.json 
+
+# compose docker up
+$ docker compose up
+
+# forçar o mesmo comando após "docker-compose up --build"
+
+#If you are not in the root folder, you have to specify the name of the docker compose file. Use the below command in a situation like that.
+#    docker-compose -f docker-compose.yml up 

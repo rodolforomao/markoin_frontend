@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Roboto', sans-serif, system-ui;
+  }
+}
+
+.light-theme {
+  --c-1: #fff;
+  --c-2: #f4f5f7;
+  --c-4: #ebecf0;
+  --c-3: #ddd;
+  --c-6: #edf2f7;
+  --c-7: #dbeafe;
+  --c-8: white;
+  --c-text: #172b4d;
+  --primary: rgb(53, 33, 4);
+  --secondary: #439aff;
+  --c-5: #000;
+  --c-9: #d8d8d899;
+
+}
+
+.dark-theme {
+  --c-1: #222;
+  --c-2: #363737;
+  --c-text: #e2e2e2;
+  --c-3: #888;
+  --c-5: #fff;
+  --c-4: #ebecf0;
+  --c-6: #555;
+  --c-7: #444;
+  --c-8: #272727;
+  --primary: rgba(28, 41, 81, 1);
+  --secondary: #439aff;
+  --c-9: #4e494999;
+
+}
+
+.tdImr {
+  background-color: yellow !important;
+  color: #000!important;
+}
+
+.c-1 {
+  background-color: var(--c-1);
+}
+
+@layer components {
+  .btn {
+    @apply whitespace-nowrap rounded-[3px] bg-yellow-600 px-3 py-1 text-white hover:bg-yellow-700 active:bg-yellow-800;
+  }
+
+  .btn-crystal {
+    @apply rounded-[3px] px-3 py-1 hover:bg-c-6 active:bg-c-7;
+  }
+
+  .btn-alert {
+    @apply whitespace-nowrap rounded-[3px] bg-red-500 px-3 py-1 text-white hover:bg-red-600 active:bg-red-700;
+  }
+
+  .btn-icon {
+    @apply rounded-[3px] p-1 hover:bg-c-2;
+  }
+
+  .bg-jira-gradient {
+    background: linear-gradient(0deg, rgb(26, 27, 9) 0%, rgb(30, 30, 10) 30.92%, rgb(40, 34, 14) 55.74%, rgb(53, 57, 20) 78.37%, rgb(81, 78, 28) 99.71%, rgb(81, 67, 28) 100%);
+  }
+
+  /* Optionally, you can remove the below filter line if it's not necessary */
+  .bg-jira-gradient::before {
+    content: '';
+    background: linear-gradient(0deg, rgba(9, 14, 27, 1) 0%, rgba(10, 16, 30, 1) 30.92%, rgba(14, 21, 40, 1) 55.74%, rgba(20, 29, 57, 1) 78.37%, rgba(28, 41, 81, 1) 99.71%, rgba(28, 41, 81, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1C2951', endColorstr='#090E1B', GradientType=0);
+  }
+
+  .btn-toggle {
+    @apply relative h-[19px] cursor-pointer appearance-none rounded-full bg-slate-300 after:absolute after:top-[1.5px] after:left-[2px] after:h-4 after:w-4 after:rounded-full after:bg-white after:duration-150 after:content-[""] checked:bg-blue-500 checked:after:translate-x-[12px];
+  }
+}
+
+.bi {
+      color: white;
+    }

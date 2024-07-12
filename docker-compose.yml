@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+    app:
+        container_name: sima-frontend-reactjs-container
+        image: docker-sima-reactjs-frontend-image
+        build:
+            context: .
+        ports:
+            - 5173:5173
+            #- 80:80
+
+        volumes:
+            - ./dist:/dist
+            # - ./dist:/dist
+            # - /app/build:/dist
+
+# build:
+#     script:
+#     - docker-compose up --build
+#     timeout: 5m

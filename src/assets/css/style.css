@@ -1,0 +1,172 @@
+
+.area_de_trabalho,
+.recentes {
+    font-size: 12px;
+    color: rgb(199, 187, 187);
+    margin-right: 25px;
+}
+
+
+.btn_acao {
+    height: 26px;
+
+}
+
+
+.area_de_trabalho_vertical{
+    font-size: 12px;
+    display: flex;
+    margin-top: 80px;
+    color: var(--c-5);
+    margin-left: 12px;
+
+}
+
+.list_area_trabalho{
+    color: var(--c-5);
+}
+
+.icon_quadro {
+    margin-top: -5px;
+    margin-right: 10px;
+    font-size: 27px;
+}
+
+
+.quadros_bt {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+
+}
+
+.cards_quadros {
+    padding-left: 360px;
+    padding-right: 100px;
+
+}
+
+.cards_tamanho{
+    width: 230px;
+    height: 112px
+    
+}
+
+.menu_vertical {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.nav {
+    margin-left: 20px;
+    position: fixed;
+}
+
+.barra_de_nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #85562e;
+    position: fixed;
+    height: 55px;
+    width: 99%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+::-webkit-scrollbar {
+    width: 7px; /* width of the scrollbar */
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #192645;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255, 0.6); /* color of the scrollbar handle */
+    border-radius: 14px; /* roundness of the scrollbar handle */
+  }
+
+.img_sima {
+    width: 42px;
+    margin-right: 25px;
+}
+
+.btn_sair {
+    background-color: #aeb2b91c;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.custom-table .table.--bs-table-bg {
+    background-color: var(--c-0);
+}
+.modelOptionCreate {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    top: 56px;
+    left: 300px;
+    background: white;
+    z-index: 99999;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.ulOptionCreate {
+    padding-left: 15px;
+    padding-top: 20px;
+    position: relative;
+
+}
+
+.div_desktops {
+    margin-left: 370px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.criar_area_de_trabalho:hover,
+.criar_area_quadro:hover {
+    background-color: #b8b4b46e;
+}
+
+
+.meu-nav-dropdown {
+    position: relative; /* Isso garante que o dropdown respeite o layout dos elementos vizinhos */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos responsivo  */
+    .quadros_bt{
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .area_de_trabalho_vertical{
+        display: none;
+    }
+
+    .cards_quadros{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .div_desktops{
+        margin-left: 30px;
+        margin-top:  20px;
+        font-weight: 700;
+    }
+
+    .cards_tamanho{
+        width: 180px;
+    }
+    
+
+  }
